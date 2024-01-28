@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a missing or invalid translation
+description: Report a general bug in cactus
 labels: [wrong]
 
 body:
@@ -15,12 +15,15 @@ body:
           required: true
   - type: dropdown
     attributes:
-      label: "Language"
+      label: "Importance"
       description: |
-        Select the language this bug occurs with
+        Select the importance this bug has
       options:
-        - English (default)
-        - German
+        - Tiny problem (this doesn\'t really impact anything)
+        - Minor problem (it's noticable, but not that important)
+        - Important problem (it impacts general mod usability)
+        - Major problem (it makes major features unusable / causes crashes)
+        - Critical problem (this is a major security issue or prevents all usage)
     validations:
       required: true
 
