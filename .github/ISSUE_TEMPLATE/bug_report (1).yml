@@ -1,0 +1,87 @@
+name: Bug Report
+description: Report a missing or invalid translation
+labels: [wrong]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before reporting a bug, please see if you are using the [latest version](https://cactusmod.xyz) of Cactus.**
+  - type: checkboxes
+    attributes:
+      label: Version check
+      options:
+        - label: I am using the latest available version of Cactus (devbuilds not included)
+          required: true
+  - type: dropdown
+    attributes:
+      label: "Language"
+      description: |
+        Select the language this bug occurs with
+      options:
+        - English (default)
+        - German
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Bug Description
+      description: |
+        Describe the unexpected behavior of translations.
+        If you want to attach screenshots, use the comment field at the bottom of the page.
+      placeholder: |
+        Example: "The title of the 'Macros' screen says 'Modules'"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Location
+      description: |
+        Describe where this translation issue is located in the mod
+      placeholder: |
+        Example:
+        1. Go into the Cactus main menu
+        2. Navigate to "Macros"
+        3. The screen title is wrong
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: |
+        Describe what you think should've happened
+      placeholder: |
+        Example: "The title should say 'Macros'"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional Client Info
+      description: |
+        Do you use other mods which could interfer? Are you using a special modloader?
+      placeholder: |
+        Example: "I use quilt as the mod loader and i also have mods x and y installed"
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Make sure you have followed each of the steps outlined here.
+      options:
+        - label: I have described the problem so that it is easy to understand
+          required: true
+        - label: If applicable, I have included a screenshot.
+          required: true
+        - label: This bug does not occur as part of an experimental feature
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        <hr><br>
+        Please assign labels based on if the translation is missing, wrong or if there is another problem with it.
+        This makes it easier for us to filter and fix these problems.
