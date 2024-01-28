@@ -87,5 +87,5 @@ body:
     attributes:
       value: |
         <hr><br>
-        Please assign labels based on if the translation is missing, wrong or if there is another problem with it.
+        Please assign labels that describe the issue the best.
         This makes it easier for us to filter and fix these problems.
