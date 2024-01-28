@@ -2,8 +2,8 @@
 name: Crash report
 about: Report a crash related to cactus
 title: ''
-labels: ''
-assignees: Dwarslooper
+labels: bug, crash
+assignees: ''
 
 ---
 
