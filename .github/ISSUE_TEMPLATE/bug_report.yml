@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a general bug in cactus
-labels: [wrong]
+labels: [bug]
 
 body:
   - type: markdown
@@ -31,10 +31,10 @@ body:
     attributes:
       label: Bug Description
       description: |
-        Describe the unexpected behavior of translations.
+        Describe the unexpected behavior.
         If you want to attach screenshots, use the comment field at the bottom of the page.
       placeholder: |
-        Example: "The title of the 'Macros' screen says 'Modules'"
+        Example: "When i press button X it takes me to screen Y instead of Z"
     validations:
       required: true
 
@@ -42,12 +42,12 @@ body:
     attributes:
       label: Location
       description: |
-        Describe where this translation issue is located in the mod
+        Describe where this bug is located in the mod and how to reach the location
       placeholder: |
         Example:
         1. Go into the Cactus main menu
-        2. Navigate to "Macros"
-        3. The screen title is wrong
+        2. Navigate to "About Cactus"
+        3. Clicking "Patch notes" opens the website
     validations:
       required: true
 
@@ -57,7 +57,7 @@ body:
       description: |
         Describe what you think should've happened
       placeholder: |
-        Example: "The title should say 'Macros'"
+        Example: "It should show the patch notes"
     validations:
       required: true
 
@@ -65,7 +65,8 @@ body:
     attributes:
       label: Additional Client Info
       description: |
-        Do you use other mods which could interfer? Are you using a special modloader?
+        Do you use other mods which could interfer or a modpack? Are you using a special modloader?
+        If using a modpack, the name is enough. You don't have to list all mods, only the ones added by you.
       placeholder: |
         Example: "I use quilt as the mod loader and i also have mods x and y installed"
     validations:
